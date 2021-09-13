@@ -3,18 +3,14 @@
 *::after
 {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(
-        to right,
-        #00aaff,
-        #00ff6c
-    );
+    background-image: url(../imagens/rain.jpg)
 }
 
 .calculator-grid {
@@ -38,8 +34,17 @@ body {
     background-color: rgba(255, 255, 255, .9);
 }
 
-.span-two {
+.span-two,
+.span-two-b{
    grid-column: span 2; 
+}
+
+.span-two-b {
+    border-radius: 0 0 15px 0;
+}
+
+.bot {
+    border-radius: 0 0 0 15px;
 }
 
 .output {
@@ -52,6 +57,7 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
+    border-radius: 15px 15px 0 0;
 }
 
 .output .previous-operand {
